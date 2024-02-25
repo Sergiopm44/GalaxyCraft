@@ -1,0 +1,192 @@
+body{
+    background-image: url(../images/fondo\ mediaval.gif);
+    background-size: cover;
+    background-repeat: repeat;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.image{
+    width: 960px;
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 4px;
+    border-color: aliceblue;
+    animation-name: bordeImg;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.main{
+    display: block;
+    width: 960px;
+    margin: auto;
+}
+.welcome{
+    display: grid;
+    float: none;
+    color: white;
+    border-width: 10px;
+    margin-top: -120px;
+    text-align: center;
+    text-transform: uppercase;
+}
+.infoServer{
+    display: block;
+    background-color: lightgray;
+    width: 460px;
+    height: 250px;
+    float: left;
+    margin-top: 115px;
+    font-size: 15px;
+    padding-left: 5px;
+    border-style: solid;
+    border-radius: 20px;
+    border-color: rgb(108, 116, 122);
+    animation-name: bordeImg;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.infoAdd{
+    background-color: lightgray;
+    float: right;
+    width: 460px;
+    height: 250px;
+    padding-left: 5px;
+    margin-top: 115px;
+    margin-left: 18px;
+    margin-bottom: 25px;
+    border-style: solid;
+    border-radius: 20px;
+    border-color: aliceblue;
+    animation-name: bordeImg;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.infoYoutube{
+    display: grid;
+    background-color: lightgray;
+    width: 960px;
+    height: 250px;
+    padding: 5px;
+    margin-top: 115px;
+    border-style: solid;
+    border-radius: 20px;
+    border-color: aliceblue;
+    animation-name: bordeImg;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+span.rojoN{
+    color: orangered;
+    font-weight: bold;
+}
+span.kingdom{
+    color: lightsalmon;
+    font-weight: bold;
+}
+.discord{
+    width: 40px;
+}
+button.ds{
+    width: 150px;
+    margin-left: 160px;
+    background-color: mediumpurple;
+    border-style: solid;
+    border-color: purple;
+    border-radius: 10px;
+}
+button.yt{
+    width: 150px;
+    height: 50px;
+    background-color: lightcoral;
+    border-style: solid;
+    border-color: red;
+    border-radius: 10px;
+    margin: -70px;
+    margin-left: 640px;
+    display: block;
+}
+ul.ytL{
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    margin: -180px;
+    margin-left: 650px;
+    display: block;
+    color: darkgoldenrod;
+}
+h2{
+    text-align: center;
+}
+
+li.mago{
+    list-style-image: url(../images/Sombrero\ mago\ \(Personalizado\).png);
+    list-style-type: disc;
+}
+li.berserker{
+    list-style-image: url(../images/hacha\ mine\ \(Personalizado\).png);
+}
+li.paladin{
+    list-style-image: url(../images/escudo\ mine\ \(Personalizado\).gif);
+    width: 20px;
+}
+li.asesino{
+    list-style-image: url(../images/daga\ mine\ \(Personalizado\).png);
+}
+li.tirador{
+    list-style-image: url(../images/rifle\ mine\ \(Personalizado\).png);
+}
+
+.video{
+    display: grid;
+    float: left;
+    margin-top: -15px;
+    border-radius: 30px;
+}
+.scroll{
+    view-timeline-name: --div;
+    view-timeline-axis: block;
+    animation-timeline: --div;
+    animation-range: entry 10% cover 20%;
+    animation-fill-mode: both;
+
+    animation-name: scroll;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+.imgYt{
+    width: 40px;
+}
+.youtube{
+    margin-top: 15px;
+    text-align: center;
+    padding: 1px;
+    font-weight: bold;
+}
+@keyframes bordeImg{
+    0%{
+        border-color: aliceblue;
+    }25%{
+        border-color: lightskyblue;
+    }50%{
+        border-color: grey;
+    }75%{
+        border-color: lightseagreen;
+    }100%{
+        border-color: lightyellow;
+    }
+}
+
+@keyframes scroll {
+    from{
+        opacity: 0;
+        scale: 25%;
+    }to{
+        opacity: 1;
+        scale: 100%;
+    }
+}
